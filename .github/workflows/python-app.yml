@@ -42,5 +42,5 @@ jobs:
         cd flask_app
         make install
         make run &
-        sleep 5 
+        sleep 10
         curl --fail http://localhost:3000 || exit 1
