@@ -15,23 +15,27 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="../static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
 <body>
     <section class="LSA">
-        <h1 class="section__title section__title--Kmeans">
+        <h1 class="section__title section__title--LSA">
             <strong>Latenet Sematic Analysis (LSA) Search Engine</strong>
         </h1>
         
-        <input type="string" class="input-number" placeholder="Enter a number" id="UserInput" />
+       
+        <input type="text" class="input-number" placeholder="Enter your query" id="UserInput" />
         
         <div class="button-container">
-            <button class='glowing-btn' onclick = "search()">
-                <span class='glowing-txt'>Step <span class='faulty-letter'>Through </span>Kmeans</span>
+            <button class='glowing-btn'>
+                <span class='glowing-txt'>Search</span>
             </button>
         </div>
 
+        <div id="results-container"></div>
+        <canvas id="cosineChart" width="400" height="200"></canvas>
     </section>
     <script src="../static/script.js"></script>
    
