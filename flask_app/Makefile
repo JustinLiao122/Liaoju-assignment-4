@@ -2,7 +2,7 @@ install:
 	@pip install -r requirements.txt
 	
 run:
-	@FLASK_APP=app.py FLASK_ENV=development flask run --host=0.0.0.0 --port=3000
+	@FLASK_APP=app.py FLASK_DEBUG=development flask run --host=0.0.0.0 --port=3000
 
 
 clean:
